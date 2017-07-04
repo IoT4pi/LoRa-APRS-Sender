@@ -14,6 +14,7 @@ recalcGPS() with this function you can send the GPS Data in APRS style
 Works together with LoRa APRS Gateway
 
 */
+/*
 **************************************************************************************************
 ProMiniLoRaTracker_V1 Programs
 
@@ -64,7 +65,7 @@ void loop()
       displayInfo();
     }
 
-  if (millis() > 5000 && gps.charsProcessed() < 10)
+  if (millis() > 200000 && gps.charsProcessed() < 10)
   {
     digitalWrite(PLED1, HIGH);
     Serial.println("No GPS detected!");
@@ -245,7 +246,7 @@ void recalcGPS(){
   //Soll
   // OE1KEB-12>APRS:!4802.38N/01617.23E> /A=  0m SNR+9dB RSSI=-61db Batt=3.27V
   //Ist
-  //<�48.03962,16.28727,  0,OE1KEB-12,3.28,*
+  //<ï¿½48.03962,16.28727,  0,OE1KEB-12,3.28,*
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////
@@ -304,7 +305,7 @@ void displayInfo()
     lora_TXPKTInfo();			//print packet information
     lora_TXBuffPrint(0);
     Serial.println();
-    delay(7000);
+    delay(20000);
   }
   else
   {
@@ -332,7 +333,7 @@ void displayInfo()
     lora_TXPKTInfo();     //print packet information
     lora_TXBuffPrint(0);
     Serial.println();
-    delay(7000);
+    delay(20000);
   }
 }
 
