@@ -9,7 +9,7 @@ These programs may be used free of charge for personal, recreational and educati
 This program, or parts of it, may not be used for or in connection with any commercial purpose without
 the explicit permission of the author Stuart Robinson.
 
-Die Software des Senders wurde geändert, sodass die GPS Daten einerseitz in Klartext oder in komprimierter Form (Mic-e) übertragen werden.
+Die Software des Senders wurde geändert, sodass die GPS Daten einerseits in Klartext oder in komprimierter Form (Mic-e) übertragen werden.
 Sender arbeitet LoRa APRS Gateway zusammen. 
 
 Ändere die Zeile 43 mit 
