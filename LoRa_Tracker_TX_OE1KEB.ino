@@ -374,7 +374,7 @@ void setup()
   SPI.setBitOrder(MSBFIRST);
   lora_ResetDev();			//Reset the device
   lora_Setup();				//Do the initial LoRa Setup
-  lora_SetFreq(108, 105, 153);		//Set the LoRa frequency, 434.400 Mhz lora_SetFreq(byte lora_LFMsb, byte lora_LFMid, byte lora_LFLsb)
+  lora_SetFreq(108, 113, 153);		//Set the LoRa frequency, 434.400 Mhz lora_SetFreq(byte lora_LFMsb, byte lora_LFMid, byte lora_LFLsb)
   lora_Tone(1000, 1000, 10);             //Transmit an FM tone, 1000hz, 100ms
   ss.begin(GPSBaud);                          //Startup soft serial for GPS
 }
